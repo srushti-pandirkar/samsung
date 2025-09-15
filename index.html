@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samsung Sample Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fff;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5em;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('https://images.samsung.com/is/image/samsung/assets/global/galaxy-s24-ultra-5g/highlights/galaxy-s24-ultra-highlights-kv.jpg') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      max-width: 80%;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .products {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .product-info p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background-color: #f4f4f4;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.5em;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Samsung</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Support</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Galaxy S24 Ultra – Break the boundaries of innovation</h2>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://images.samsung.com/is/image/samsung/assets/global/galaxy-s24/gallery/galaxy-s24-ultra-gallery-1.jpg" alt="Galaxy S24 Ultra">
+      <div class="product-info">
+        <h3>Galaxy S24 Ultra</h3>
+        <p>Experience the power of AI in your pocket. Ultra performance, ultra camera.</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.samsung.com/is/image/samsung/p6pim/levant/feature/146349012/levant-feature-galaxy-z-flip5-f731-538926146?$FB_TYPE_A_MO_JPG$" alt="Galaxy Z Flip5">
+      <div class="product-info">
+        <h3>Galaxy Z Flip5</h3>
+        <p>Foldable style meets serious function. Compact, powerful, and iconic.</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.samsung.com/is/image/samsung/p6pim/levant/feature/146371309/levant-feature-138929689?$FB_TYPE_A_MO_JPG$" alt="Galaxy Tab S9">
+      <div class="product-info">
+        <h3>Galaxy Tab S9</h3>
+        <p>Desktop power in a tablet. Seamless productivity anywhere you go.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Samsung Sample Page. This is a demo and not affiliated with Samsung Electronics.
+  </footer>
+
+</body>
+</html>
